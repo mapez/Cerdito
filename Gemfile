@@ -10,8 +10,7 @@ group :development do
 	# Use sqlite3 as the database for Active Record
 	gem 'sqlite3'
 end
-gem 'bootstrap-sass', '~> 3.2.0'
-gem 'autoprefixer-rails'
+
 
 gem 'uglifier', '>= 1.3.0'
 # Use CoffeeScript for .js.coffee assets and views

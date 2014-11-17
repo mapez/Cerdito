@@ -1,25 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<div class = 'container-fluid'>
+	<div class= 'formincome'>
+		<%= form_for Income.new do |f| %>
+			<%= render partial: 'movement_form', locals: {form: f} %>
+		<% end %>
+	</div>
 
+	<div class = 'listaincome'>
+		<ul>
+			<% @incomes.each do |income| %>
+				<li><%= income.amount %></li>
+			<% end %>
+		</ul>
+	</div>
 
-<div class= 'formincome'>
-	<%= form_for Income.new do |f| %>
-		<%= render partial: 'movement_form', locals: {form: f} %>
-	<% end %>
-</div>
+	
+		<div class='formexpense'>
+			<%= form_for Expense.new do |f| %>
+				<%= render partial: 'movement_form', locals: {form: f} %>
+			<% end %>
+		</div>
 
-<div class = 'listaincome'>
-	<% @incomes.each do |income| %>
-		<%= income.amount %>
-	<% end %>
-</div>
+		<div class = 'listaexpense'>
+			<ul>
+				<% @expenses.each do |expense| %>
+					<li><%= expense.amount %></li>
+				<% end %>
+			</ul>
+		</div>
+	
+	</div>
 
-<div class='formexpense'>
-	<%= form_for Expense.new do |f| %>
-		<%= render partial: 'movement_form', locals: {form: f} %>
-	<% end %>
-</div>
-
-<div class = 'listaexpense'>
-	<% @expenses.each do |expense| %>
-		<%= expense.amount %>
-	<% end %>
-</div>
+</body>
+</html>
