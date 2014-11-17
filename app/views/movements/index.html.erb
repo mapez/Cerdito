@@ -1,0 +1,25 @@
+
+
+<div class= 'formincome'>
+	<%= form_for Income.new do |f| %>
+		<%= render partial: 'movement_form', locals: {form: f} %>
+	<% end %>
+</div>
+
+<div class = 'listaincome'>
+	<% @incomes.each do |income| %>
+		<%= income.amount %>
+	<% end %>
+</div>
+
+<div class='formexpense'>
+	<%= form_for Expense.new do |f| %>
+		<%= render partial: 'movement_form', locals: {form: f} %>
+	<% end %>
+</div>
+
+<div class = 'listaexpense'>
+	<% @expenses.each do |expense| %>
+		<%= expense.amount %>
+	<% end %>
+</div>

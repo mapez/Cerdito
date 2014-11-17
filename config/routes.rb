@@ -1,4 +1,12 @@
 Rails.application.routes.draw do
+
+  get :movements, to: 'movements#index'
+
+  resources :incomes
+
+  resources :expenses
+
+  get 'home', to: 'home#welcome'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
