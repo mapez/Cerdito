@@ -5,37 +5,53 @@
 	<title>Document</title>
 </head>
 <body>
-	<div class = 'container-fluid'>
-	<div class= 'formincome'>
+	<div class = 'container-fluid' id = 'movements'>
+
+	
+	
+
+	<div class = 'income'>
 		<%= form_for Income.new do |f| %>
 			<%= render partial: 'movement_form', locals: {form: f} %>
 		<% end %>
-	</div>
+	
 
-	<div class = 'listaincome'>
-		<ul>
+	
+		<ul class = 'listaincom'>
 			<% @incomes.each do |income| %>
-				<li><%= income.amount %></li>
+				<li ><%= income.amount %></li>
+			<% end %>
+		</ul>
+
+		<ul class = 'listaincom'>
+			<% @incomes.each do |income| %>
+				<li ><%= income.description %></li>
 			<% end %>
 		</ul>
 	</div>
 
 	
-		<div class='formexpense'>
+	<div class = 'expense'>	
 			<%= form_for Expense.new do |f| %>
 				<%= render partial: 'movement_form', locals: {form: f} %>
 			<% end %>
-		</div>
+		
 
-		<div class = 'listaexpense'>
-			<ul>
+		
+			<ul class = 'listaexpen'>
 				<% @expenses.each do |expense| %>
-					<li><%= expense.amount %></li>
+					<li ><%= expense.amount %></li>
 				<% end %>
 			</ul>
-		</div>
+
+			<ul class = 'listaexpen'>
+			<% @incomes.each do |income| %>
+				<li ><%= income.description %></li>
+			<% end %>
+		</ul>
+	</div>	
+	
 	
 	</div>
-
 </body>
 </html>

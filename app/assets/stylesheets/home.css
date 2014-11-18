@@ -2,3 +2,19 @@
   Place all the styles related to the matching controller here.
   They will automatically be included in application.css.
 */
+#home {
+   background: url(cerditos.jpeg) no-repeat center center fixed;
+   -webkit-background-size: cover;
+   -moz-background-size: cover;
+   -o-background-size: cover;
+   background-size: cover;
+   .opacity(@opacity) {
+  opacity: @opacity;
+
+}
+}
+
+.bienvenido {
+	text-align: center;
+	margin-top: -50px;
+}
