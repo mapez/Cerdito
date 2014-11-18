@@ -7,8 +7,10 @@
    	background-size: auto;
    	height: 1000px;
 
- 
- 	
+  }
+
+  .container-fluid {
+  	margin-top:100px;
   }
 
 .income {
