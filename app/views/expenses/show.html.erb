@@ -1,5 +1,11 @@
-<h1>Movements#show</h1>
-<p>Find me in app/views/movements/show.html.erb</p>
+	
+	<div class = 'incomepig'>
+		<%= image_tag "cerditorojas.jpg"%>
+	</div>
+	<div class = 'texto'>
 
-<h2><%= number_to_currency(@expense.amount) %></h2>
-<h2><%= @expense.description %></h2>	
+		<h1><%= number_to_currency(@expense.amount) %>
+		<small><%= @expense.description %></small></h1>
+		<%= link_to 'Volver', movements_path %>
+
+	</div>

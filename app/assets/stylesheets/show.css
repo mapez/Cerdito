@@ -1,0 +1,13 @@
+
+.incomepig{
+	float: left;
+	display: inline-block;
+}
+
+.texto {
+	margin-left: 100px;
+	margin-top:110px;
+	float: left;
+	display: inline-block;
+	font-size:20px;
+}

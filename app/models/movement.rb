@@ -1,4 +1,5 @@
 class Movement < ActiveRecord::Base
+  belongs_to :user
   def  amount
     self[:amount] / 100.0
   end

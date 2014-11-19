@@ -1,5 +1,6 @@
 class Expense < Movement
   before_save :check_negative
+  belongs_to :user
 
   protected
 

@@ -1,4 +1,20 @@
-#movements{
+
+.welcome{
+  
+  display: inline-block;
+  
+
+}
+
+.logout {
+
+  float:right;
+  display: inline-block;
+}
+
+
+
+.movements{
 
 	background: url(cerdito.jpg)no-repeat center center fixed;
  	-webkit-background-size: cover;
@@ -7,14 +23,15 @@
    	background-size: auto;
    	height: 1000px;
 
+
   }
 
   .container-fluid {
-  	margin-top:100px;
+  	margin-top:50px;
   }
 
 .income {
-	margin-top: 20px;
+	margin-top: 50px;
 }
 
 .expense {
@@ -22,9 +39,23 @@
 }
 
 .listaincom {
+  
 	margin-top: 20px;
+
 }
 
 .listaexpen{
+  
 	margin-top: 20px;
+  margin-right:400px;
+
+}
+
+.listadesc {
+
+  list-style: none;
+  float:left;
+  margin-left:300px;
+  margin-top: -107px;
+  display: inline-block;
 }

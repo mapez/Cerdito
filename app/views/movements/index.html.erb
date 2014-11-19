@@ -1,14 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+<head class = 'container-fluid'>
 	<meta charset="UTF-8">
 	<title>Document</title>
+	<% if user_signed_in? %>
+ 		<div class = 'welcome'>
+ 			<h2>Bienvenido !</h2>
+ 		</div>
+   		<div class = 'logout'>
+   			<%= link_to 'Logout', destroy_user_session_path, method: 'DELETE' %>
+   		</div>
+    <% else %>
+    	<h2>Nobody logued in</h2>
+    <% end %>
 </head>
 <body>
-	<div class = 'container-fluid' id = 'movements'>
+	<div  class = 'movements'>
 
-	
-	
 
 	<div class = 'income'>
 		<%= form_for Income.new do |f| %>
@@ -23,7 +31,7 @@
 			<% end %>
 		</ul>
 
-		<ul class = 'listaincom'>
+		<ul class = 'listadesc'>
 			<% @incomes.each do |income| %>
 				<li ><%= income.description %></li>
 			<% end %>
@@ -44,14 +52,19 @@
 				<% end %>
 			</ul>
 
-			<ul class = 'listaexpen'>
-			<% @incomes.each do |income| %>
-				<li ><%= income.description %></li>
+			<ul class = 'listadesc'>
+			<% @expenses.each do |expense| %>
+				<li ><%= expense.description %></li>
 			<% end %>
 		</ul>
 	</div>	
 	
 	
+	<div class = 'bruto'>
+		
+	</div>
+
+
 	</div>
 </body>
 </html>

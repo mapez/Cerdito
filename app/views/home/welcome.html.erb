@@ -1,14 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>Welcome</title>
-<header><h1 class = 'bienvenido'></h1> </header>
-	
-</head>
-<body class='container-fluid' id = 'home'>
-</html>
-	 <%= link_to 'Entrar', new_user_session_path  %>
-	
-</body>
-</html>
+
+<body id = 'home'>
+	<button class="botonentrar">
+	 	<%= link_to  'Entrar', new_user_session_path  %>
+	</button>
+
+	 <button class = 'botonnuevo'>
+	 	<%= link_to 'Nuevo usuario', new_user_registration_path  %>
+	 </button>
+</body>	

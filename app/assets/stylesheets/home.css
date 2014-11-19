@@ -8,13 +8,45 @@
    -moz-background-size: cover;
    -o-background-size: cover;
    background-size: cover;
-   .opacity(@opacity) {
-  opacity: @opacity;
+   
 
-}
 }
 
 .bienvenido {
 	text-align: center;
 	margin-top: -50px;
 }
+
+
+.botonentrar {
+  float:left;
+  display:inline-block;
+  margin-top:500px;
+  margin-left:447px;
+  margin-right: 720px;
+  padding:5px 40px 5px 40px;
+  border: 1px black inset;
+  text-decoration: none;
+  border-radius: 15px;
+  text-align: center;
+}
+
+.botonentrar:hover {
+  background-color: #DC143C;
+}
+.botonnuevo {
+  float:left;
+  display:inline-block;
+  margin-top:-82px;
+  margin-left:820px;
+  margin-right: 332px;
+  padding:5px 20px 5px 20px;
+  border: 1px black inset;
+  text-decoration: none;
+  border-radius: 15px;
+  text-align: center;
+}
+
+.botonnuevo:hover{
+  background-color: #32CD32 ;
+  }

@@ -10,9 +10,13 @@ Rails.application.routes.draw do
 
   resources :expenses
 
+  resources :users do
+    resources :movements
+  end
+
   get 'home', to: 'home#welcome'
   
-  get '/users/:id', to: 'users#show'
+  get '/users/:id', to: 'movements#index'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
