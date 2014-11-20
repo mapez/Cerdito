@@ -7,7 +7,7 @@ class IncomesController < ApplicationController
   end
 
   def create
-    @income = Income.create income_params
+    @income = current_user.incomes.create income_params
 
     redirect_to @income
   end

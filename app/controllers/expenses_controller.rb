@@ -7,7 +7,7 @@ class ExpensesController < ApplicationController
   end
 
   def create
-    @expense = Expense.create expense_params
+    @expense = current_user.expenses.create expense_params
 
     redirect_to @expense
   end

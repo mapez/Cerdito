@@ -1,12 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-<div class = 'container-fluid'>
-<head>
+<head class = 'container-fluid'>
 	<meta charset="UTF-8">
 	<title>Document</title>
 	<% if user_signed_in? %>
  		<div class = 'welcome'>
- 			<h2>Bienvenido <%= current_user.name %> !</h2>
+ 			<h2>Bienvenido !</h2>
  		</div>
    		<div class = 'logout'>
    			<%= link_to 'Logout', destroy_user_session_path, method: 'DELETE' %>
@@ -62,11 +61,12 @@
 		</ul>
 	</div>	
 	
+	
+	<div class = 'bruto'>
+		
 	</div>
-	
 
 
-	
+	</div>
 </body>
-</div> 
 </html>

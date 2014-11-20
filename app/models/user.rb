@@ -7,4 +7,6 @@ class User < ActiveRecord::Base
   has_many :expenses
   has_many :incomes
   has_many :movements
+
+  validates :name, presence: true
 end
