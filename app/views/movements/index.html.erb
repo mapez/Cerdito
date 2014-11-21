@@ -55,18 +55,36 @@
 			<% end %>
 		</ul>
 
-		<ul class = 'listadesc'>
+		<ul class = 'listadesc2'>
 			<% @expenses.each do |expense| %>
 				<li ><%= expense.description %></li>
 			<% end %>
 		</ul>
 	</div>	
+		
+	<div class = 'neto'>
+		<h3>Capacidad de ahorro <%=  @sum  %></h3>	
+	</div>						
+	
+	<div class = 'cuanto'>
+		<h3>¿Cuanto quieres ahorrar?</h3>
+	</div>
+
+	<div class = 'cantidad'>
+
+		<input type="text" class="field" placeholder="€">
+	</div>	
+
+	
+	
+	<button type="button" class="btn btn-info">¡Ahorrar!</button>
+	
+	
+	
 	
 	</div>
-	
-
-
-	
+		
 </body>
+
 </div> 
 </html>

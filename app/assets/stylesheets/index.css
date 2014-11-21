@@ -40,13 +40,13 @@
 
 .listaincom {
   
-	margin-top: 20px;
+	margin-top: 30px;
 
 }
 
 .listaexpen{
   
-	margin-top: 20px;
+	margin-top: 30px;
   margin-right:400px;
 
 }
@@ -56,6 +56,40 @@
   
   float:left;
   margin-left:300px;
-  margin-top: -71px;
+  margin-top: -69px;
   display: inline-block;
+}
+
+.listadesc2 {
+
+  
+  float:left;
+  margin-left:300px;
+  margin-top: -49px;
+  display: inline-block;
+}
+
+.neto{
+  
+  margin-top:56px;
+
+}
+
+.cuanto {
+  float:left;
+  display: inline-block;
+  margin-top:29px;
+  
+}
+.cantidad {
+  float:left;
+  display: inline-block;
+  margin-top:50px;
+  margin-left:10px;
+  
+}
+
+.btn-info {
+  margin-top:47px;
+  margin-left:5px;
 }
