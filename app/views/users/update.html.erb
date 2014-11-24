@@ -21,9 +21,9 @@
       title: { text: 'Euros'}  
     },  
     series: [{  
-      pointInterval: <%= 1.month * 1000 %>,  
-      pointStart: <%= 3.weeks.ago.at_midnight.to_i * 1000 %>,  
-      data: [1, 2, 5, 7, 3]  
+      pointInterval: <%= 1.day * 1000 %>,  
+      pointStart: <%= Movement.first.created_at.to_i %>,  
+      data: <%= Movement.all.group("date(created_at)").sum(:amount).map{|k,v| v} %>
     }]  
   });  
 });    
