@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+.<!DOCTYPE html>
 <html lang="en">
 <div class = 'container-fluid'>
 <head>
@@ -70,14 +70,22 @@
 		<h3>¿Cuanto quieres ahorrar?</h3>
 	</div>
 
-	<div class = 'cantidad'>
 
-		<input type="text" class="field" placeholder="€">
-	</div>	
+	<%= form_for current_user do |f| %>
+
+	<div class="ahorro">
+
+		<%= f.number_field :ahorro, min: 0, step: 0.01,  :placeholder => "€" %>
+		
+	</div>
+
+	<div class="botonahorro">
+		<%= f.submit  "¡Ahorra!", class: "btn btn-success"  %>
+	</div>
+	<% end %>
 
 	
-	
-	<button type="button" class="btn btn-info">¡Ahorrar!</button>
+
 	
 	
 	

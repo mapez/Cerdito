@@ -11,7 +11,7 @@ group :development do
 	gem 'sqlite3'
 end
 
-
+gem 'will_paginate', '~> 3.0.7'
 
 gem 'uglifier', '>= 1.3.0'
 # Use CoffeeScript for .js.coffee assets and views
