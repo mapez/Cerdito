@@ -2,6 +2,7 @@
 .welcome{
   
   display: inline-block;
+  margin-top:30px;
   
 
 }
@@ -26,9 +27,7 @@
 
   }
 
-  .container-fluid {
-  	margin-top:50px;
-  }
+ 
 
 .income {
 	margin-top: 50px;
@@ -56,7 +55,7 @@
   
   float:left;
   margin-left:300px;
-  margin-top: -69px;
+  margin-top: -49px;
   display: inline-block;
 }
 
@@ -65,7 +64,7 @@
   
   float:left;
   margin-left:300px;
-  margin-top: -49px;
+  margin-top: -90px;
   display: inline-block;
 }
 

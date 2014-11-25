@@ -1,0 +1,18 @@
+.fondo {
+   background: url(cerditoblanco.jpg) no-repeat  ;
+   
+   float: left;
+   display: inline-block;
+   background-size: 550px 650px;
+   height: 650px;
+
+}
+
+
+.grafica {
+	margin-top: 200px;
+	margin-left: 550px;
+	 float: left;
+   display: inline-block;
+
+}

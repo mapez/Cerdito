@@ -11,3 +11,26 @@
 	display: inline-block;
 	font-size:20px;
 }
+
+.texto2 {
+	margin-left: 100px;
+	margin-top:13px;
+	float: left;
+	display: inline-block;
+	font-size:20px;
+}
+
+.consejo {
+	margin-top:180px;
+	margin-left:150px;
+	
+}
+
+
+.verde {
+	margin-top:185px;
+}
+
+.naranja{
+	margin-top:185px;
+}

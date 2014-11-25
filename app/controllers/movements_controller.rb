@@ -10,7 +10,7 @@ class MovementsController < ApplicationController
     @expenses.each do |inc|
       @sum += inc.amount
     end
-    Movement.sum = @sum
+    
     
   end
 
