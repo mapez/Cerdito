@@ -1,5 +1,13 @@
 Rails.application.routes.draw do
 
+  get 'savings/index'
+
+  get 'savings/show'
+
+  get 'savings/edit'
+
+  get 'savings/new'
+
   root 'home#welcome'
   
   devise_for :users, path: '',                    

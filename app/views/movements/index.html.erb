@@ -1,21 +1,23 @@
-.<!DOCTYPE html>
-<html lang="en">
 <div class = 'container-fluid'>
-<head>
-	<meta charset="UTF-8">
-	<title>Document</title>
-	<% if user_signed_in? %>
- 		<div class = 'welcome'>
- 			<h2>Bienvenido <%= current_user.name %> !</h2>
- 		</div>
-   		<div class = 'logout'>
-   			<%= link_to 'Logout', destroy_user_session_path, method: 'DELETE' %>
-   		</div>
-    <% else %>
-    	<h2>Nobody logued in</h2>
-    <% end %>
-</head>
-<body>
+	<div id="block3">
+		<% if user_signed_in? %>
+			<div class = 'welcome'>
+				<h2>Welcome <%= current_user.name %> !</h2>
+			</div>
+			
+			<p class="date">Nov <span>28</span></p>
+			<p class="tags"><span>Your online piggy bank:</span>
+			<a href="#" >Incomes</a>,
+			<a href="#">Movements</a>,
+			<a href="#" >Expenses</a></p>
+			<div class = 'logout'>
+				<%= link_to 'Logout', destroy_user_session_path, :style => 'color: #F50077 ', method: 'DELETE' %>
+				
+			</div>
+		<% else %>
+			<h2>Nobody logued in</h2>
+		<% end %>
+	</div>
 	<div  class = 'movements'>
 
 
@@ -24,9 +26,9 @@
 		<%= form_for Income.new do |f| %>
 			<%= render partial: 'movement_form', locals: {form: f} %>
 		<% end %>
-	
 
-	
+
+
 		<ul class = 'listaincom'>
 			<% @incomes.each do |income| %>
 				<li ><%= income.amount %></li>
@@ -61,9 +63,11 @@
 			<% end %>
 		</ul>
 	</div>	
-		
+
 	<div class = 'neto'>
-		<h3 id="data-sum" data-sum="<%=  @sum  %>">Capacidad de ahorro <%=  @sum  %></h3>	
+		<h3 id="data-sum" data-sum="<%=  @balance.value  %>">
+			Capacidad de ahorro <%=  @balance.value  %>
+		</h3>	
 	</div>						
 	
 	<div class = 'cuanto'>
@@ -73,26 +77,15 @@
 
 	<%= form_for current_user do |f| %>
 
-	<div class="ahorro">
+		<div class="ahorro">
 
-		<%= f.number_field :ahorro, min: 0, step: 0.01,  :placeholder => "€" %>
+			<%= f.number_field :ahorro, min: 0, step: 0.01,  :placeholder => "Cantidad a ahorrar" %>
 		
-	</div>
+		</div>
 
-	<div class="botonahorro">
-		<%= f.submit  "¡Ahorra!", class: "btn btn-success"  %>
-	</div>
+		<div class="botonahorro">
+			<%= f.submit  "¡Ahorra!", class: "btn btn-success"  %>
+		</div>
 	<% end %>
-
-	
-
-	
-	
-	
-	
-	</div>
-		
-</body>
-
-</div> 
-</html>
+</div>
+</div>

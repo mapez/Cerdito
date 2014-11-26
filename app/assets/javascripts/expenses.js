@@ -3,3 +3,9 @@
 $(function () {
   $('[data-toggle="popover"]').popover()
 })
+
+$(document).ready(function(){
+		$('.carousel').carousel({
+		  interval: 4000
+		});
+	  });

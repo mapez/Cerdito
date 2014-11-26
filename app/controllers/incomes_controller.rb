@@ -3,7 +3,7 @@ class IncomesController < ApplicationController
   end
 
   def show
-    @income = Income.find(params[:id])
+    @income = current_user.incomes.find(params[:id])
   end
 
   def create

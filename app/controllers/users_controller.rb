@@ -11,6 +11,7 @@ class UsersController < ApplicationController
 
     current_user.update_attributes(user_params)
     @users = User.paginate(:page => params[:page], :per_page => 5)
+    @balance = Balance.new current_user
     render 'users/update'
    
   end
